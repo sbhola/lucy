@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>7ad34096-959d-4625-814a-568338c85f2c</ProjectGuid>
+    <ProjectGuid>{A8D4A907-F4FB-48B1-A790-72927D108E6D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lucy.ConsoleApp</RootNamespace>
@@ -46,6 +46,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lucy.Core\Lucy.Core.csproj">
+      <Project>{708ed592-7067-4853-af11-27686b6b8ea8}</Project>
+      <Name>Lucy.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lucy.Infrastructure\Lucy.Infrastructure.csproj">
+      <Project>{deebacfb-99ba-44d3-a659-85343dde5c39}</Project>
+      <Name>Lucy.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
